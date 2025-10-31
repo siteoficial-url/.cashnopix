@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤑 CASH NO PIX - Ganhe Dinheiro de Volta com CashBack</title>
+    <style>
+        /* Estilos Globais e Reset Básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d; /* Fundo Preto Escuro */
+            color: #f0f0f0; /* Texto Claro */
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Seção de Destaque (Hero) */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: #000;
+        }
+
+        .hero h1 {
+            color: #00ff66; /* Verde Neon para o destaque */
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        /* Botão Principal */
+        .btn-ativar {
+            display: inline-block;
+            background-color: #00ff66; /* Verde Principal */
+            color: #0d0d0d;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 255, 102, 0.4);
+        }
+
+        .btn-ativar:hover {
+            background-color: #00e65c;
+            transform: translateY(-2px);
+        }
+
+        /* Seções de Conteúdo */
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section h2 {
+            color: #00ff66;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        /* Explicação de CashBack */
+        .explicacao {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start; /* Alinhamento ao topo para melhor leitura no desktop */
+        }
+
+        .explicacao > div {
+            flex: 1;
+            text-align: center; /* Centraliza conteúdo interno */
+        }
+
+        .explicacao h3 {
+            color: #00ff66;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+
+        .explicacao p {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #aaa;
+            text-align: left; /* Retorna o texto ao alinhamento normal (esquerda) */
+            padding: 0 10px;
+        }
+
+        /* Depoimentos */
+        .depoimentos-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .depoimento-card {
+            background-color: #1a1a1a; /* Fundo dos cards mais escuro */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            max-width: 350px;
+            border-left: 5px solid #00ff66;
+            flex-grow: 1; /* Permite que cresçam um pouco, mas respeita max-width */
+        }
+
+        .depoimento-card p {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+
+        .depoimento-card strong {
+            display: block;
+            text-align: right;
+            color: #00ff66;
+        }
+
+        /* Selo de Garantia - Centralização da imagem */
+        .garantia {
+            text-align: center;
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            border: 2px dashed #00ff66;
+        }
+        
+        .garantia img {
+            display: block; 
+            margin: 0 auto; /* CENTRALIZAÇÃO DA IMAGEM */
+            filter: hue-rotate(90deg) saturate(3); 
+            margin-bottom: 15px;
+        }
+
+        .garantia h3 {
+            color: #fff;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .garantia p {
+            font-size: 1.2em;
+            color: #00ff66;
+            font-weight: bold;
+        }
+        
+        /* Ícones - Simulação de ícones com emojis */
+        .icon {
+            font-size: 3em;
+            color: #00ff66;
+            margin-bottom: 10px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 40px;
+        }
+
+        /* Mídia Queries para Responsividade (Mobile First) */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .explicacao {
+                flex-direction: column; /* Coloca as colunas uma abaixo da outra no celular */
+                gap: 30px;
+            }
+
+            .explicacao p {
+                text-align: center; /* Centraliza o texto no celular */
+            }
+
+            .depoimento-card {
+                max-width: 100%; /* Ocupa a largura total no celular */
+            }
+
+            .btn-ativar {
+                font-size: 1em;
+                padding: 15px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>🤑 CASH NO PIX</h1>
+            <p>O jeito mais rápido e fácil de ter Dinheiro de Volta (CashBack) direto na sua conta PIX!</p>
+            
+            <a href="https://go.perfectpay.com.br/PPU38CQ2ISJ" class="btn-ativar">🚀 QUERO ATIVAR MEU CASH NO PIX AGORA!</a>
+        </div>
+    </header>
+
+    <section class="section" id="como-funciona">
+        <div class="container">
+            <h2>✨ Como o CashBack Funciona e Te Paga no PIX?</h2>
+            
+            <div class="explicacao">
+                <div>
+                    <span class="icon">💰</span>
+                    <h3>1. O Que é CashBack?</h3>
+                    <p>Cashback significa "Dinheiro de Volta". É um sistema onde você recebe de volta uma porcentagem do valor que gastou em compras online ou em lojas parceiras. Ao invés de pontos ou milhas, você recebe DINHEIRO REAL.</p>
+                </div>
+                <div>
+                    <span class="icon">🔄</span>
+                    <h3>2. Nosso Aplicativo: Cash no PIX</h3>
+                    <p>Nós intermediamos suas avaliações com milhares de lojas parceiras. Elas nos pagam uma comissão por trazer um cliente (você!), e nós **dividimos a maior parte dessa comissão** com você.</p>
+                </div>
+                <div>
+                    <span class="icon">⚡</span>
+                    <h3>3. Resgate Rápido via PIX!</h3>
+                    <p>Assim que o valor ser comissionado e a avaliação ser confirmada, o saldo é liberado para você. Com o CASH NO PIX, você não espera dias: o resgate é feito por transferência imediata para a sua chave PIX cadastrada. Simples assim!</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+                 <a href="https://go.perfectpay.com.br/PPU38CQ2ISJ" class="btn-ativar">ATIVAÇÃO RÁPIDA: COMECE A GANHAR HOJE!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="depoimentos" style="background-color: #0d0d0d;">
+        <div class="container">
+            <h2>🗣️ O Que Dizem Nossos Usuários?</h2>
+            
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <p>"Eu não acreditava, mas em 3 semanas consegui resgatar R$ 1.200,00! Usei o dinheiro no meu PIX para pagar uma conta de luz. **É real e muito rápido!**"</p>
+                    <strong>— Camila S. (São Paulo/SP)</strong>
+                </div>
+                <div class="depoimento-card">
+                    <p>"Acumulo cashback há meses em outro app e nunca consegui resgatar. Com o CASH NO PIX, o dinheiro caiu na hora! **Melhor app de cashback que já usei!**"</p>
+                    <strong>— Rafael M. (Curitiba/PR)</strong>
+                </div>
+                <div class="depoimento-card">
+                    <p>"O suporte me ajudou a entender tudo e agora não compro mais nada online sem ativar o app primeiro. Já são mais de R$ 1.500,00 de volta. **Recomendo demais!**"</p>
+                    <strong>— Juliana B. (Belo Horizonte/MG)</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="ativar">
+        <div class="container">
+            <h2>🔒 Sua Tranquilidade é Nossa Prioridade</h2>
+            
+            <div class="garantia">
+                <img src="https://i0.wp.com/portaldr.com/wp-content/uploads/2018/11/garantia-7-dias-ou-seu-dinheiro-de-volta-bot%C3%A3o-de-garantia-portaldr-1.png?ssl=1" alt="Selo de Garantia">
+                <h3>GARANTIA DE 7 DIAS</h3>
+                <p>Use o CASH NO PIX por 7 dias. Se você não entender como ganhar dinheiro de volta ou não gostar da facilidade do PIX, devolvemos seu tempo e damos suporte total. Sua ativação é **LIVRE DE RISCOS!**</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <h2>Pronto para Ter Dinheiro de Volta no PIX?</h2>
+                 <a href="https://go.perfectpay.com.br/PPU38CQ2ISJ" class="btn-ativar">CLIQUE AQUI E ATIVE O APLICATIVO CASH NO PIX!</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CASH NO PIX. Todos os direitos reservados. | Termos de Uso e Política de Privacidade.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
